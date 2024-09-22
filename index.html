@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="scoreboard">
+        <h1 id="scoreboard_heading">ROCK<br>PAPER<br>SCISSIORS</h1>
+        <div id="spacer"></div>
+        <div class="scorecard">
+            <h1 class="score">COMPUTER<br>SCORE</h1>
+            <h2 class="score_val" id="computer_score">00</h2>
+        </div>
+        <div class="scorecard">
+            <h1 class="score">PLAYER<br>SCORE</h1>
+            <h2 class="score_val" id="player_score">00</h2>
+        </div>
+    </div>
+    <div id="playarea">
+      <button class="circle_btn" id="stone_btn" onclick="playgame('stone')"></button>
+      <button class="circle_btn" id="scissor_btn"  onclick="playgame('scissor')"></button>
+      <button class="circle_btn" id="paper_btn" onclick="playgame('paper')"></button>
+    </div>
+
+    <div id="result_screen">
+     <div id="">
+        <h3 class="yourPick">YOU PICKED</h3>
+        <button class="circle_btn" id="your_pick_btn"></button>
+     </div>
+     <div id="sub_div2_res">
+        <h2 id="winMessage">YOU WIN</h2>
+        <h3 id="tie">AGAINST PC</h3>
+        <button class="play_again_button" onclick=playAgain()>PLAY AGAIN</button>
+     </div>
+     <div class="" id="computer_pick_btn">
+        <h3 class="yourPick">PC PICKED</h3>
+        <button class="circle_btn" id="pc_pick_btn"></button>
+     </div>
+    </div>
+    <img id="triangle" src="Assests/triangle.png" alt="">
+    <div class="next_container">
+        <button id="rule_button" onclick=showRules()>RULES</button>
+        <a href="hurrayScreen.html">
+        <button id="next_button">NEXT</button>
+        </a>  
+    </div>
+<div id="rules">
+    <img id="ruleImage" src="Assests/Rules.svg" alt="">
+    <button id="cancel_button" onclick=hideRules()></button>
+</div>
+</body>
+</html>
